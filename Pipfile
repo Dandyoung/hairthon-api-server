@@ -1,7 +1,9 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
+
+[dev-packages]
 
 [packages]
 flask = "*"
@@ -13,7 +15,5 @@ opencv-python = "*"
 keras = "*"
 twilio = "*"
 
-[dev-packages]
-
 [requires]
-python_version = "3.9"
+python_version = "3.8"
