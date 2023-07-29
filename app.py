@@ -30,4 +30,4 @@ def ajax():
 
 #0.0.0.0은 외부에서의 접근을 허용한다는 뜻이고, 우리가 제공받은 포트는 5000번입니다~
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, threaded=False)
+    app.run(host='0.0.0.0', threaded=False)
