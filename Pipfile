@@ -5,11 +5,12 @@ name = "pypi"
 
 [packages]
 flask = "*"
-gunicorn = "*"
+flask-cors = "*"
+tensorflow = "*"
+pillow = "*"
+numpy = "*"
 opencv-python = "*"
 keras = "*"
-flask_cors = "*"
-tensorflow = "*"
 twilio = "*"
 
 [dev-packages]
