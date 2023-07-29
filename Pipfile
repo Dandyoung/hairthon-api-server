@@ -10,6 +10,7 @@ opencv-python = "*"
 keras = "*"
 flask_cors = "*"
 tensorflow = "*"
+twilio = "*"
 
 [dev-packages]
 
