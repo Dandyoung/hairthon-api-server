@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 flask = "*"
 gunicorn = "*"
+opencv-python = "*"
+keras = "*"
+flask_cors = "*"
+tensorflow = "*"
 
 [dev-packages]
 
