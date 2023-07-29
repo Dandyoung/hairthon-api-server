@@ -11,8 +11,6 @@ import cv2
 app = Flask(__name__)
 CORS(app)
 
-# MNIST 학습 모델 https://www.tensorflow.org/tutorials/quickstart/beginner?hl=ko
-
 def ajaxImage(imageSize):
     content = request.values['image'].split(';')[1]
     image_encoded = content.split(',')[1]
