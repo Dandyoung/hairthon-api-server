@@ -1,9 +1,16 @@
-from flask import Flask, render_template
+# app.py
+from flask import Flask, jsonify
+from werkzeug.utils import secure_filename
+from os import listdir, remove, path
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
-    return render_template('./index.html')
+# json 데이터를 리턴함 
+# 이미지 경로를 전달할 예정
+@app.route('/api/flask', methods=['GET'])
+def flask_data():
+    data = {'path': './images/node.png'}
+    return jsonify(data)
 
-# test
+if __name__ == '__main__':
+    app.run(host='https://port-0-hairthon-api-server-rt92alkjpc0lh.sel4.cloudtype.app/')
